@@ -1,0 +1,17 @@
+{
+  "name": "flogar/xmldsig",
+  "description": "Libreria para firmar XML",
+  "license": "BSD-2-Clause",
+  "keywords": ["xml","xmldsig","signature","security" ],
+  "homepage": "https://github.com/jucafloga/xmldsig",
+  "autoload": {
+    "psr-4": {
+      "Flogar\\XMLSecLibs\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "ext-dom": "*",
+    "ext-openssl": "*"
+  }
+}
