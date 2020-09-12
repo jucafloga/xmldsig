@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Flogar\XMLSecLibs\Util;
-
 
 class XPath
 {

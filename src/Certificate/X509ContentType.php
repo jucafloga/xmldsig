@@ -1,8 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrador
- */
+
 namespace Flogar\XMLSecLibs\Certificate;
 
 /**
