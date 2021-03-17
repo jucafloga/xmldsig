@@ -133,7 +133,7 @@ class SignedXml
         $objKey = new XMLSecurityKey(
             $this->keyAlgorithm,
             [
-                 'type' => 'private',
+                'type' => 'private',
             ]
         );
         $objKey->loadKey($this->privateKey);
@@ -194,7 +194,7 @@ class SignedXml
             $objKey = new XMLSecurityKey(
                 $this->keyAlgorithm,
                 [
-                     'type' => 'public',
+                    'type' => 'public',
                 ]
             );
             $objKey->loadKey($this->getPublicKey());

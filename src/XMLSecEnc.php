@@ -195,7 +195,7 @@ class XMLSecEnc
         $node = $nodeset->item(0);
 
         if (!$node) {
-                return null;
+            return null;
         }
 
         return base64_decode($node->nodeValue);
@@ -353,7 +353,7 @@ class XMLSecEnc
             $query = ".//xmlsecenc:EncryptionMethod";
             $nodeset = $xpath->query($query, $node);
             if ($encmeth = $nodeset->item(0)) {
-                   $attrAlgorithm = $encmeth->getAttribute("Algorithm");
+                $attrAlgorithm = $encmeth->getAttribute("Algorithm");
                 try {
                     $objKey = new XMLSecurityKey($attrAlgorithm, array('type' => 'private'));
                 } catch (Exception $e) {

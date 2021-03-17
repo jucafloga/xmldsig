@@ -111,10 +111,10 @@ class XMLSecurityDSig
     {
         $uuid = md5(uniqid(mt_rand(), true));
         $guid = $prefix.substr($uuid, 0, 8)."-".
-                substr($uuid, 8, 4)."-".
-                substr($uuid, 12, 4)."-".
-                substr($uuid, 16, 4)."-".
-                substr($uuid, 20, 12);
+            substr($uuid, 8, 4)."-".
+            substr($uuid, 12, 4)."-".
+            substr($uuid, 16, 4)."-".
+            substr($uuid, 20, 12);
         return $guid;
     }
 
@@ -376,7 +376,7 @@ class XMLSecurityDSig
                         }
                         $node = $node->nextSibling;
                     }
-            break;
+                    break;
                 case 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315':
                 case 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments':
                     if (!$includeCommentNodes) {
